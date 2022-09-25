@@ -1,8 +1,22 @@
 import React from 'react'
+import ContentHeader from '../../components/ContentHeader'
+import SelectedInput from '../../components/SelectInput'
+import {mothns, years} from '../../utils/Selectoptions'
+
+
+import {Container} from './styles'
+
 
 const Dashboard: React.FC = () => {
+
     return (
-        <h1>Dasboard</h1>
+        <Container>
+             <ContentHeader title={'Dashboard'} lineColor='#fff'>
+                <SelectedInput options={mothns}/>
+                <SelectedInput options={years}/>
+             </ContentHeader>
+        </Container>
+    
     )
 }
 
