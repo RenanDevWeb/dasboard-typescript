@@ -45,8 +45,19 @@ export const Filters = styled.div`
         margin: 5px auto;
         border-bottom: 10px solid ${props => props.theme.colors.succes};
     }
+`
 
-
-
-
+export const TotalValue = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    h3{
+        color: ${props => props.theme.colors.white};
+        margin-right: 8px;
+    }
+    span{
+        color: ${props => props.theme.colors.white};
+        margin-right: 8px;
+        font-weight: 700;
+    }
 `
